@@ -178,9 +178,10 @@ export default async function Home() {
 
               <Link
                 href="/collections/all?category=protection"
-                className="rounded-full bg-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-black hover:bg-zinc-200 transition"
+                style={{ backgroundColor: "#ffffff", color: "#000000" }}
+                className="screen-protection-btn rounded-full !bg-white px-6 py-2.5 text-xs font-black uppercase tracking-wider !text-black shadow-md hover:!bg-zinc-200 transition active:scale-95 inline-flex items-center gap-1.5"
               >
-                Shop All Protection ({protectionProducts.length})
+                Show All Protections ({protectionProducts.length}) →
               </Link>
             </div>
 
