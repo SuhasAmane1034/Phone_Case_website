@@ -127,7 +127,8 @@ export function VariantSelector({ product }: { product: CatalogProduct }) {
         </div>
         <button
           type="button"
-          className="button button-primary add-cart transition-all"
+          style={{ backgroundColor: "#000000", color: "#ffffff" }}
+          className="button button-primary add-cart !bg-black !text-white font-bold transition-all shadow-md active:scale-95"
           onClick={addToCart}
           disabled={!variant}
         >
@@ -135,7 +136,8 @@ export function VariantSelector({ product }: { product: CatalogProduct }) {
         </button>
         <button
           type="button"
-          className="button button-secondary buy-now"
+          style={{ backgroundColor: "#ffffff", color: "#000000", borderColor: "#000000" }}
+          className="button button-secondary buy-now !bg-white !text-black border-2 border-black font-bold shadow-md hover:!bg-zinc-100 active:scale-95"
           disabled={!variant}
           onClick={() => {
             addToCart();

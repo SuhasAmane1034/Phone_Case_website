@@ -450,10 +450,11 @@ export default function CheckoutPage() {
 
               <button
                 type="submit"
-                className="button button-primary checkout-submit"
+                style={{ backgroundColor: "#000000", color: "#ffffff" }}
+                className="button button-primary checkout-submit !bg-black !text-white font-black text-sm uppercase tracking-wider py-4 rounded-xl shadow-lg hover:!bg-zinc-800 transition active:scale-95 cursor-pointer"
                 disabled={submitting}
               >
-                {submitting ? "Processing Order…" : `Complete Order • ₹${(subtotal + shipping).toLocaleString("en-IN")}`}
+                {submitting ? "Processing Order…" : `Place Order • ₹${(subtotal + shipping).toLocaleString("en-IN")}`}
               </button>
             </form>
           )}

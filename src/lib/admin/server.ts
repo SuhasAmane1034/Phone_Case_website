@@ -175,7 +175,7 @@ export async function getAdminContext(): Promise<AdminContext> {
   // 5. Environment & Development Fallback:
   // If ADMIN_EMAILS matches or during local development, allow authenticated user to manage
   if (!roleName) {
-    const adminEmails = (process.env.ADMIN_EMAILS ?? "admin@ghyamajha.com")
+    const adminEmails = (process.env.ADMIN_EMAILS ?? "suhasbackup777@gmail.com,test@ghyamajha.com")
       .split(",")
       .map((e) => e.trim().toLowerCase());
     const userEmail = (user.email ?? "").toLowerCase();

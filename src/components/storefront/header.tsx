@@ -165,6 +165,11 @@ export function Header() {
             <Link href="/track-order" className="hover:text-black transition py-5">
               Track Order
             </Link>
+
+            {/* Admin Direct Link */}
+            <Link href="/admin" className="hover:text-black transition py-5 font-bold">
+              Admin
+            </Link>
           </nav>
 
           {/* Logo (Centered) */}
@@ -253,6 +258,10 @@ export function Header() {
             <div className="border-t border-zinc-100 pt-3 flex flex-col gap-2.5 text-xs font-semibold text-zinc-700">
               <Link href="/track-order" onClick={() => setMobileMenuOpen(false)} className="py-1 flex items-center justify-between">
                 <span>Track My Order</span>
+                <span>→</span>
+              </Link>
+              <Link href="/admin" onClick={() => setMobileMenuOpen(false)} className="py-1 flex items-center justify-between font-bold text-zinc-950">
+                <span>Admin Panel</span>
                 <span>→</span>
               </Link>
               <Link href="/account" onClick={() => setMobileMenuOpen(false)} className="py-1 flex items-center justify-between">

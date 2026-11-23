@@ -25,13 +25,45 @@
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
-a { color:inherit; text-decoration:none; }
+a { text-decoration:none; }
 .hero-card-btn {
   color: #000000 !important;
   background-color: #ffffff !important;
 }
 .hero-card-btn:hover {
   background-color: #f4f4f5 !important;
+}
+
+/* Guaranteed high-contrast buttons across mobile and desktop */
+.button-primary,
+button.button-primary,
+a.button-primary,
+.add-cart,
+.checkout-submit {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #000000 !important;
+}
+
+.button-secondary,
+button.button-secondary,
+a.button-secondary,
+.buy-now {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.button-secondary:hover,
+button.button-secondary:hover,
+.buy-now:hover {
+  background-color: #f4f4f5 !important;
+  color: #000000 !important;
+}
+
+.chip-all-products {
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 button,input { font:inherit; }
 .announcement { height:34px; display:flex; align-items:center; justify-content:center; gap:60px; background:#090909; color:white; font-size:10px; text-transform:uppercase; letter-spacing:.14em; }
@@ -103,7 +135,7 @@ button,input { font:inherit; }
   .payment-options label { min-height:64px; padding:12px 14px; }
 }
 @media (max-width:1050px) { .catalog-toolbar { grid-template-columns:repeat(2,1fr) auto auto; }.pdp { grid-template-columns:minmax(0,52%) minmax(340px,48%); }.pdp-main { min-height:560px; }.purchase-row { grid-template-columns:100px 1fr; }.cart-layout { grid-template-columns:minmax(0,1fr) 320px; }.checkout-form { padding-left:5vw; padding-right:5vw; } }
-@media (max-width:720px) { .announcement { height:30px; justify-content:center; }.announcement span:not(:first-child) { display:none; }.site-header { height:64px; padding:0 16px; }.mobile-menu nav { top:64px; }.brand { font-size:17px; }.header-actions { gap:12px; }.account-icon { display:none; }.hero { min-height:590px; grid-template-columns:1fr; }.hero-copy { position:absolute; z-index:3; width:100%; min-height:590px; justify-content:flex-end; padding:60px 20px 42px; color:white; background:rgba(0,0,0,.48); }.hero h1 { font-size:43px; }.hero-sub { max-width:330px; font-size:14px; }.hero-art { min-height:590px; }.hero-phone { width:210px; height:420px; opacity:.75; }.hero-actions { flex-wrap:wrap; }.button-primary { background:white; color:black; }.button-secondary { border-color:white; }.section { padding:72px 16px; }.section-heading { align-items:flex-start; }.section-heading h2,.faq h2,.collection-banner h2 { font-size:38px; }.device-grid { grid-template-columns:repeat(2,1fr); gap:8px; }.device-card { height:220px; padding:14px; }.product-grid { grid-template-columns:repeat(2,1fr); gap:8px; }.product-visual { height:260px; }.phone-case { width:120px; height:210px; border-width:5px; border-radius:20px; }.camera-cut { width:55px; height:55px; border-radius:12px; top:10px; left:9px; }.camera-cut i { width:18px; height:18px; border-width:4px; }.product-name { font-size:13px; }.price-row { flex-wrap:wrap; }.quick-add { font-size:9px; }.collection-banner { min-height:430px; margin:0; grid-template-columns:1fr; padding:50px 20px; }.banner-mark { display:none; }.benefit-grid { grid-template-columns:1fr; }.benefit-grid article { min-height:170px; border-right:0; border-bottom:1px solid var(--line); }.benefit-grid h3 { margin-top:40px; }.benefits { grid-template-columns:repeat(2,1fr); }.benefits article { min-height:110px; padding:18px 16px; }.faq { grid-template-columns:1fr; }.faq-list { margin-top:50px; }.footer-grid { grid-template-columns:1fr 1fr; padding:60px 20px; }.footer-grid>div:first-child,.footer-grid>div:last-child { grid-column:1/-1; }.footer-bottom { margin:0 20px; padding:20px 0; }.footer-bottom div { display:none; } }
+@media (max-width:720px) { .announcement { height:30px; justify-content:center; }.announcement span:not(:first-child) { display:none; }.site-header { height:64px; padding:0 16px; }.mobile-menu nav { top:64px; }.brand { font-size:17px; }.header-actions { gap:12px; }.account-icon { display:none; }.hero { min-height:590px; grid-template-columns:1fr; }.hero-copy { position:absolute; z-index:3; width:100%; min-height:590px; justify-content:flex-end; padding:60px 20px 42px; color:white; background:rgba(0,0,0,.48); }.hero h1 { font-size:43px; }.hero-sub { max-width:330px; font-size:14px; }.hero-art { min-height:590px; }.hero-phone { width:210px; height:420px; opacity:.75; }.hero-actions { flex-wrap:wrap; }.hero-copy .button-primary { background:white; color:black; }.hero-copy .button-secondary { border-color:white; }.section { padding:72px 16px; }.section-heading { align-items:flex-start; }.section-heading h2,.faq h2,.collection-banner h2 { font-size:38px; }.device-grid { grid-template-columns:repeat(2,1fr); gap:8px; }.device-card { height:220px; padding:14px; }.product-grid { grid-template-columns:repeat(2,1fr); gap:8px; }.product-visual { height:260px; }.phone-case { width:120px; height:210px; border-width:5px; border-radius:20px; }.camera-cut { width:55px; height:55px; border-radius:12px; top:10px; left:9px; }.camera-cut i { width:18px; height:18px; border-width:4px; }.product-name { font-size:13px; }.price-row { flex-wrap:wrap; }.quick-add { font-size:9px; }.collection-banner { min-height:430px; margin:0; grid-template-columns:1fr; padding:50px 20px; }.banner-mark { display:none; }.benefit-grid { grid-template-columns:1fr; }.benefit-grid article { min-height:170px; border-right:0; border-bottom:1px solid var(--line); }.benefit-grid h3 { margin-top:40px; }.benefits { grid-template-columns:repeat(2,1fr); }.benefits article { min-height:110px; padding:18px 16px; }.faq { grid-template-columns:1fr; }.faq-list { margin-top:50px; }.footer-grid { grid-template-columns:1fr 1fr; padding:60px 20px; }.footer-grid>div:first-child,.footer-grid>div:last-child { grid-column:1/-1; }.footer-bottom { margin:0 20px; padding:20px 0; }.footer-bottom div { display:none; } }
 .search-results { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
 @media (max-width:720px) { .search-results { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; } }
 

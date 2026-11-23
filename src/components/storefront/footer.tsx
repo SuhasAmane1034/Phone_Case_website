@@ -16,6 +16,7 @@ export function Footer() {
         <div>
           <h3>The essentials</h3>
           <Link href="/track-order">Track Order</Link>
+          <Link href="/admin" style={{ color: "#ffffff" }} className="!text-white font-bold hover:underline">Admin Portal</Link>
           <Link href="/info/shipping">Shipping Policy</Link>
           <Link href="/info/terms">Terms & Conditions</Link>
         </div>

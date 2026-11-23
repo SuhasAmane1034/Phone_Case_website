@@ -84,31 +84,36 @@ export default async function Home() {
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none text-xs font-bold uppercase tracking-wider text-zinc-700">
             <Link
               href="/collections/all"
-              className="shrink-0 rounded-full bg-black px-4 py-2 text-white shadow-xs"
+              style={{ backgroundColor: "#000000", color: "#ffffff" }}
+              className="chip-all-products shrink-0 rounded-full !bg-black px-5 py-2.5 !text-white font-black shadow-sm tracking-wider"
             >
               All Products
             </Link>
             <Link
               href="#samsung-fold"
-              className="shrink-0 rounded-full border border-zinc-300 bg-white px-4 py-2 hover:border-black transition"
+              style={{ backgroundColor: "#ffffff", color: "#18181b" }}
+              className="shrink-0 rounded-full border border-zinc-300 !bg-white px-4 py-2 !text-zinc-900 font-bold hover:border-black transition"
             >
               Samsung Galaxy Z Fold 8
             </Link>
             <Link
               href="#screen-protection"
-              className="shrink-0 rounded-full border border-amber-300 bg-amber-50/80 px-4 py-2 text-amber-950 hover:bg-amber-100 transition"
+              style={{ backgroundColor: "#fef3c7", color: "#451a03" }}
+              className="shrink-0 rounded-full border border-amber-300 !bg-amber-100 px-4 py-2 !text-amber-950 font-bold hover:bg-amber-200 transition"
             >
               Screen & Lens Protection ✨
             </Link>
             <Link
               href="#samsung-s26"
-              className="shrink-0 rounded-full border border-zinc-300 bg-white px-4 py-2 hover:border-black transition"
+              style={{ backgroundColor: "#ffffff", color: "#18181b" }}
+              className="shrink-0 rounded-full border border-zinc-300 !bg-white px-4 py-2 !text-zinc-900 font-bold hover:border-black transition"
             >
               Samsung S26 Ultra
             </Link>
             <Link
               href="#iphone-series"
-              className="shrink-0 rounded-full border border-zinc-300 bg-white px-4 py-2 hover:border-black transition"
+              style={{ backgroundColor: "#ffffff", color: "#18181b" }}
+              className="shrink-0 rounded-full border border-zinc-300 !bg-white px-4 py-2 !text-zinc-900 font-bold hover:border-black transition"
             >
               iPhone 18 Pro Max
             </Link>

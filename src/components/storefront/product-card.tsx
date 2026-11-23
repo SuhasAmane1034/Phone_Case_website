@@ -199,10 +199,11 @@ export function ProductCard({
           <button
             type="button"
             onClick={handleQuickAdd}
-            className={`mt-4 w-full rounded-xl py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 ${
+            style={{ backgroundColor: quickAdded ? "#059669" : "#000000", color: "#ffffff" }}
+            className={`mt-4 w-full rounded-xl py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
               quickAdded
-                ? "bg-emerald-600 text-white shadow-xs"
-                : "bg-black text-white hover:bg-zinc-800 active:scale-98"
+                ? "!bg-emerald-600 !text-white shadow-xs"
+                : "!bg-black !text-white hover:!bg-zinc-800 active:scale-98"
             }`}
           >
             {quickAdded ? "Added to Bag ✓" : "Quick Add"}

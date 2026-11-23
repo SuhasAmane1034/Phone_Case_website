@@ -41,10 +41,11 @@ export default async function AccountPage() {
         {adminRole && (
           <Link
             href="/admin"
-            className="rounded-lg border-2 border-black bg-black p-6 font-bold text-white shadow-sm transition hover:bg-zinc-800"
+            style={{ backgroundColor: "#000000", color: "#ffffff" }}
+            className="rounded-lg border-2 border-black !bg-black p-6 font-bold !text-white shadow-sm transition hover:!bg-zinc-800"
           >
             Admin Control Panel →
-            <span className="mt-1 block text-xs font-normal capitalize text-zinc-300">
+            <span className="mt-1 block text-xs font-normal capitalize !text-zinc-300">
               Role: {adminRole.role.replaceAll("_", " ")}
             </span>
           </Link>

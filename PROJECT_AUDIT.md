@@ -10,7 +10,7 @@ No replacement of existing code will occur because no source code exists in this
 
 ## Local Repository Audit
 
-- Workspace: `ghyamahja` (Next.js App Router)
+- Workspace: `/Users/suhasamane/Software /ghyamahja`
 - Git repository: No
 - Framework: Not present locally
 - `package.json`: Not present

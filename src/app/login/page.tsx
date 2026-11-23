@@ -43,7 +43,7 @@ async function signIn(formData: FormData) {
     }
 
     // In development or if user wants admin or is explicitly allowed
-    const adminEmails = (process.env.ADMIN_EMAILS ?? "admin@ghyamajha.com")
+    const adminEmails = (process.env.ADMIN_EMAILS ?? "suhasbackup777@gmail.com,test@ghyamajha.com")
       .split(",")
       .map((e) => e.trim().toLowerCase());
     const userEmail = (data.user.email ?? "").toLowerCase();

@@ -38,7 +38,7 @@ ON CONFLICT (id) DO NOTHING;
 INSERT INTO public.admin_roles (user_id, role)
 SELECT id, 'super_admin'
 FROM auth.users
-WHERE email IN ('admin@ghyamajha.com') -- Replace with your admin email
+WHERE email IN ('suhasbackup777@gmail.com', 'test@ghyamajha.com')
 ON CONFLICT (user_id) DO UPDATE SET role = 'super_admin';
 
 -- 5. Verification output
